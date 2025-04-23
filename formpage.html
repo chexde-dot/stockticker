@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Ticker</title>
+  </head>
+  <body>
+    <form action="/process" method="GET">
+      <h3>Enter Name or Stock Ticker:</h3>
+      <input type="text" id="name" name="name">
+
+      <br>
+      <hr>
+      <input type="radio" id="ticker" name="inputType" value="ticker">
+      <label for="ticker">Stock Ticker</label><br>
+      <input type="radio" id="compName" name="inputType" value="compName">
+      <label for="compName">Company Name</label><br>
+
+        <hr>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
