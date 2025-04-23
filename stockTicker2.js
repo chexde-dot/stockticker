@@ -28,6 +28,8 @@ function readCSV() {
 }
 readCSV();
 
+const PORT = process.env.PORT || 3000;
+
 http.createServer(function (req, res) {
     const parsedUrl = url.parse(req.url, true);
     const query = parsedUrl.query;
