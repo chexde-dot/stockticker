@@ -2,9 +2,9 @@
   "name": "stockticker",
   "version": "1.0.0",
   "description": "",
-  "main": "stockTicker1.js",
+  "main": "stockTicker2.js",
   "scripts": {
-    "start": "node stockTicker1.js",
+    "start": "node stockTicker2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
