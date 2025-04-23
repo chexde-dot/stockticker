@@ -35,11 +35,7 @@ http.createServer(function (req, res) {
     const query = parsedUrl.query;
 
   if (parsedUrl.pathname === "/") {
-    // Heroku waits for the app to bind to this port
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
+    
     const file = 'formpage.html';
     fs.readFile(file, function (err, txt) {
       if (err) {
@@ -94,6 +90,8 @@ app.listen(PORT, () => {
     res.end();
   }
 
-}).listen(8080);
+}).listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 console.log("Server running");
